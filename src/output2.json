@@ -1,0 +1,271 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_59.152.80.69_lhdjqxmh_h7z",
+    "ref_no": "ocr_python_123",
+    "file_name": "bill.jpg",
+    "request_received_on": 1683471975353,
+    "success": true,
+    "image_width": 305,
+    "image_height": 578,
+    "image_rotation": 0,
+    "recognition_completed_on": 1683471975892,
+    "receipts": [
+        {
+            "merchant_name": "Best Buy #103",
+            "merchant_address": "17545 GALE AVE",
+            "merchant_phone": null,
+            "merchant_website": null,
+            "merchant_tax_reg_no": null,
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "US",
+            "state": "CA",
+            "city": "CITY OF INDUSTRY",
+            "zip": "91748",
+            "receipt_no": "0103 041 5935",
+            "date": "2021-12-02",
+            "time": "20:35",
+            "items": [
+                {
+                    "amount": 179.0,
+                    "category": null,
+                    "description": "4900944MME73AM/A",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.0,
+                    "category": null,
+                    "description": "6451503 DIGITAL ITE",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.0,
+                    "category": null,
+                    "description": "6451510DIGITAL ITE",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.0,
+                    "category": null,
+                    "description": "6484511DIGTIAL ITE",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                }
+            ],
+            "currency": "USD",
+            "total": 179.0,
+            "subtotal": 179.0,
+            "tax": 17.03,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": null,
+            "payment_details": null,
+            "credit_card_type": "MASTER",
+            "credit_card_number": "5562",
+            "ocr_text": "          Welcome to Best Buy #103\n                17545 GALE AVE\n         CITY OF INDUSTRY, CA 91748\n Val: 100001-600535-246340-933423-483269-23295\n 0103 041 5935 12/02/21 20:35\n 4900944   MME73AM/A              179.00\n  AIRPODS (3RD GENERATION)\n  Serial # SY6PK96W01C\n  Sales Tax              17.03\n 6451503 DIGITAL ITE                0.00\n  GET 70 MILLION SONGS FREE FOR\n  Sales Tax               0.00\n 6451510   DIGITAL ITE              0.00\n  PROMO-6 MONTHS FREE OF APPLE\n  Sales Tax               0.00\n 6484511   DIGTIAL ITE              0.00\n  GET 3 MONTHS FREE OF APPLE TV\n  Sales Tax               0.00\n                       Subtotal   179.00\n                      Sales Tax    17.03\n                          Total 196.03\n ********** 5562  ChipRead USD$   196.03\n DEBIT MASTERCARD MASTERCARD\n JENS/WALTER",
+            "ocr_confidence": 96.36,
+            "width": 269,
+            "height": 535,
+            "avg_char_width": 6.87,
+            "avg_line_height": 9.3265,
+            "source_locations": {
+                "date": [
+                    [
+                        {
+                            "x": 94,
+                            "y": 180
+                        },
+                        {
+                            "x": 189,
+                            "y": 180
+                        },
+                        {
+                            "x": 189,
+                            "y": 190
+                        },
+                        {
+                            "x": 94,
+                            "y": 190
+                        }
+                    ]
+                ],
+                "total": [
+                    [
+                        {
+                            "x": 214,
+                            "y": 450
+                        },
+                        {
+                            "x": 252,
+                            "y": 450
+                        },
+                        {
+                            "x": 252,
+                            "y": 459
+                        },
+                        {
+                            "x": 214,
+                            "y": 459
+                        }
+                    ]
+                ],
+                "receipt_no": [
+                    [
+                        {
+                            "x": 9,
+                            "y": 180
+                        },
+                        {
+                            "x": 94,
+                            "y": 180
+                        },
+                        {
+                            "x": 94,
+                            "y": 191
+                        },
+                        {
+                            "x": 9,
+                            "y": 191
+                        }
+                    ]
+                ],
+                "credit_card_number": [
+                    [
+                        {
+                            "x": 5,
+                            "y": 545
+                        },
+                        {
+                            "x": 197,
+                            "y": 544
+                        },
+                        {
+                            "x": 197,
+                            "y": 555
+                        },
+                        {
+                            "x": 5,
+                            "y": 556
+                        }
+                    ]
+                ],
+                "subtotal": [
+                    [
+                        {
+                            "x": 212,
+                            "y": 450
+                        },
+                        {
+                            "x": 254,
+                            "y": 450
+                        },
+                        {
+                            "x": 254,
+                            "y": 459
+                        },
+                        {
+                            "x": 212,
+                            "y": 459
+                        }
+                    ]
+                ],
+                "merchant_name": [
+                    [
+                        {
+                            "x": 66,
+                            "y": 36
+                        },
+                        {
+                            "x": 228,
+                            "y": 36
+                        },
+                        {
+                            "x": 228,
+                            "y": 48
+                        },
+                        {
+                            "x": 66,
+                            "y": 49
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "x": 0,
+                            "y": 9
+                        },
+                        {
+                            "x": 295,
+                            "y": 9
+                        },
+                        {
+                            "x": 295,
+                            "y": 597
+                        },
+                        {
+                            "x": 0,
+                            "y": 597
+                        }
+                    ]
+                ],
+                "tax": [
+                    [
+                        {
+                            "x": 220,
+                            "y": 466
+                        },
+                        {
+                            "x": 252,
+                            "y": 466
+                        },
+                        {
+                            "x": 252,
+                            "y": 475
+                        },
+                        {
+                            "x": 220,
+                            "y": 475
+                        }
+                    ]
+                ],
+                "merchant_address": [
+                    [
+                        {
+                            "x": 101,
+                            "y": 52
+                        },
+                        {
+                            "x": 193,
+                            "y": 52
+                        },
+                        {
+                            "x": 193,
+                            "y": 63
+                        },
+                        {
+                            "x": 101,
+                            "y": 64
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}

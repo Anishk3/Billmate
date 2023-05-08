@@ -1,59 +1,59 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import receipts from '../output2.json'
+
 
 function Result() {
+  // const [receipts, setReceipts] = useState([]);
 
-    // Define the JSON file URL
-const url = 'output2.json';
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch('../output2.json');
+  //       console.log(response)
+  //       const data = await response.json();
+  //       setReceipts(data.receipts);
+  //     } catch (error) {
+  //       console.error('Error fetching JSON data:', error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
-// Fetch the JSON data from the URL
-fetch(url)
-	.then(response => response.json())
-	.then(data => {
-		// Access the "receipts" array from the JSON data
-		const receipts = data.receipts;
-
-		// Loop through each receipt and create a table row for it
-		const tableBody = document.querySelector('#receipt-table tbody');
-		receipts.forEach(receipt => {
-			const row = tableBody.insertRow();
-
-			row.insertCell().innerHTML = receipt.merchant_name;
-			row.insertCell().innerHTML = receipt.merchant_address;
-			row.insertCell().innerHTML = receipt.merchant_phone;
-			row.insertCell().innerHTML = receipt.mall;
-			row.insertCell().innerHTML = receipt.receipt_no;
-			row.insertCell().innerHTML = receipt.date;
-			row.insertCell().innerHTML = receipt.time;
-			row.insertCell().innerHTML = receipt.currency;
-			row.insertCell().innerHTML = receipt.total;
-		});
-	})
-	.catch(error => {
-		console.error('Error fetching JSON data:', error);
-	});
-    
   return (
     <div>
-        <h1>Receipt Information</h1>
-	<table id="receipt-table">
-		<thead>
-			<tr>
-				<th>Merchant Name</th>
-				<th>Merchant Address</th>
-				<th>Merchant Phone</th>
-				<th>Mall</th>
-				<th>Receipt No.</th>
-				<th>Date</th>
-				<th>Time</th>
-				<th>Currency</th>
-				<th>Total</th>
-			</tr>
-		</thead>
-		<tbody></tbody>
-	</table>
-
+      <h1>Receipt Information</h1>
+      <table id="receipt-table">
+        <thead>
+          <tr>
+            <th>Merchant Name</th>
+            <th>Merchant Address</th>
+            <th>Merchant Phone</th>
+            <th>Mall</th>
+            <th>Receipt No.</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Currency</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {receipts.receipts.map((receipt) => (
+            <tr key={receipt.receipt_no}>
+              <td>{receipt.merchant_name}</td>
+              <td>{receipt.merchant_address}</td>
+              <td>{receipt.merchant_phone}</td>
+              <td>{receipt.mall}</td>
+              <td>{receipt.receipt_no}</td>
+              <td>{receipt.date}</td>
+              <td>{receipt.time}</td>
+              <td>{receipt.currency}</td>
+              <td>{receipt.total}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Result
+export default Result;
